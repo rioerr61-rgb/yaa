@@ -3,31 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu Kedai Kopi</title>
+  <title>Menu Kedai</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>☕ Kedai Kopi Rio</h1>
+<header>
+  <h1>☕ Kedai Kopi</h1>
+  <button id="toggle">🌙</button>
+</header>
 
 <div class="menu">
-  <div class="item">
+
+  <div class="card">
+    <img src="img/kopi.jpeg">
     <h3>Es Kopi Susu</h3>
     <p>Rp 18.000</p>
   </div>
-  <div class="item">
+
+  <div class="card">
+    <img src="img/americano.jpeg">
     <h3>Americano</h3>
     <p>Rp 15.000</p>
   </div>
-  <div class="item">
+
+  <div class="card">
+    <img src="img/matcha.jpeg">
     <h3>Matcha Latte</h3>
     <p>Rp 20.000</p>
   </div>
+
 </div>
 
-<footer>
-  <p>Scan • Pesan • Nikmati</p>
-</footer>
+<script>
+  const btn = document.getElementById("toggle");
+  btn.onclick = () => {
+    document.body.classList.toggle("dark");
+  }
+</script>
 
 </body>
 </html>
